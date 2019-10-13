@@ -1,6 +1,6 @@
 # Password-Manager
 
-Local command line based password manager written in Python. This python script features a login system, password salting and hashing with SHA3_512, password encryption with AES (wip), as well as databases with SQLite.
+Local command line based password manager written in Python. This script features a login system, password salting and hashing with SHA2_512, password encryption and authentication with AES, as well as databases with SQLite. Mostly follows standards set in RF8018.
 
 ## Getting Started
 
