@@ -1,5 +1,6 @@
 """Provide tools for encryption/decryption with AES."""
 #TODO: implement rigorous testing, why not try out fuzzing??
+# or any testing at all, for that matter.
 
 from Crypto.Cipher import AES
 import hashlib
@@ -13,7 +14,7 @@ def compare(hash1, hash2):
 
 def generate_key(password, salt, iterations = 500000):
     """Derive key using PBKDF2 with sha_512. Password and salt are bytes.
-    We want a 32 byte key for use with AES. fuck you NSA.
+    We want a 32 byte key for use with AES.
     piece of shit hashlib does not support sha3 for pbkdf2 currently.
     """
 
