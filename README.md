@@ -8,4 +8,7 @@ Simply clone this repo and run 'python3 manager.py' to get started.
 
 ### Prerequisites
 
-You must have python3 installed.
+You must have python3 and the PyCrypto module installed. If you have pip, this is extremely simple:
+```
+pip install pycrypto
+```
