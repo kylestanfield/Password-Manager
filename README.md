@@ -4,7 +4,9 @@ Local command line based password manager written in Python. This script feature
 
 ## Getting Started
 
-Simply clone this repo and run 'python3 manager.py' to get started.
+Simply clone this repo and run 
+```python3 manager.py``` 
+to get started.
 
 ### Prerequisites
 
