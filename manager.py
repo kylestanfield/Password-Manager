@@ -85,7 +85,7 @@ if __name__ == '__main__':
                                     " like to view, a to add a new record, or"
                                     " q to quit: "))
             else:
-                index = strip(input("Enter a to add a new record, or q to quit:\n"))
+                index = strip(input("Enter a to add a new record, or q to quit: "))
 
             if index == 'a':
                 site = strip(input("Enter the website name: "))
@@ -103,10 +103,11 @@ if __name__ == '__main__':
 
                 C.execute("INSERT INTO sites VALUES (?, ?, ?, ?, ?, ?, ?)", (site, u_name, cipher,
                            pass_salt, iv, mac, mac_salt,))
-                print('\n')
+                print() #newline for pretty printing
             elif index == 'q':
                 user_input = 'q'                
-            else:
+
+            else: #TODO: use the MAC, somehow
                 try: 
                     index = int(index)
                 except ValueError:
