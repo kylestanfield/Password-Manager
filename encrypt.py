@@ -1,6 +1,5 @@
 """Provide tools for encryption/decryption with AES."""
 #TODO: implement rigorous testing, why not try out fuzzing??
-# or any testing at all, for that matter.
 
 from Crypto.Cipher import AES
 import hashlib
